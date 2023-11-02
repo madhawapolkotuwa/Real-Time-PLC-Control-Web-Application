@@ -1,0 +1,79 @@
+
+<div class="container">
+    <div class="disconnect-body">
+        <h1>Dissconect Plc</h1>
+        <button class="btn btn-secondary" (click)="onDisconnect()">Disconect</button>
+    </div>
+    <div class="counter-body">
+        <!-- <div class="counter-value"> -->
+            <h2>Counter C0: {{hubConnectionService.counter}}</h2>
+            <button class="btn btn-primary" (click)="onRestCounter()">Reset Conter</button>
+        <!-- </div> -->
+    </div>
+    <form class="input-body" [formGroup]="xInputForm">
+        <h4>X0-X5 input bainay change</h4>
+        <div class="ins">
+            <div class="in">
+                <h4>X0</h4>
+                <input class="input-field binary-input" type="number" min="0" max="1" value="0" formControlName="x0">
+            </div>
+            <div class="in">
+                <h4>X1</h4>
+                <input class="input-field binary-input" type="number" min="0" max="1" value="0" formControlName="x1">
+            </div>
+            <div class="in">
+                <h4>X2</h4>
+                <input class="input-field binary-input" type="number" min="0" max="1" value="0" formControlName="x2">
+            </div>
+            <div class="in">
+                <h4>X3</h4>
+                <input class="input-field binary-input" type="number" min="0" max="1" value="0" formControlName="x3">
+            </div>
+            <div class="in">
+                <h4>X4</h4>
+                <input class="input-field binary-input" type="number" min="0" max="1" value="0" formControlName="x4">
+            </div>
+            <div class="in">
+                <h4>X5</h4>
+                <input class="input-field binary-input" type="number" min="0" max="1" value="0" formControlName="x5">
+            </div>
+        </div>
+        <div style="display: flex; justify-content: start;">
+            <button class="btn btn-secondary" type="submit" (click)="OnXWrite()">Write</button>
+        </div>
+    </form>
+
+    <form class="input-body" [formGroup]="dInputForm">
+        <h4>D100-D105 Word value change</h4>
+        <div class="ins">
+            <div class="in">
+                <h4>D100</h4>
+                <input class="input-field word-input" type="number" min="0" value="0" formControlName="d100">
+            </div>
+            <div class="in">
+                <h4>D101</h4>
+                <input class="input-field word-input" type="number" min="0"  value="0" formControlName="d101">
+            </div>
+            <div class="in">
+                <h4>D102</h4>
+                <input class="input-field word-input" type="number" min="0"  value="0" formControlName="d102">
+            </div>
+            <div class="in">
+                <h4>D103</h4>
+                <input class="input-field word-input" type="number" min="0"  value="0" formControlName="d103">
+            </div>
+            <div class="in">
+                <h4>D104</h4>
+                <input class="input-field word-input" type="number" min="0"  value="0" formControlName="d104">
+            </div>
+            <div class="in">
+                <h4>D105</h4>
+                <input class="input-field word-input" type="number" min="0"  value="0" formControlName="d105">
+            </div>
+        </div>
+        <div style="display: flex; justify-content: start;">
+            <button class="btn btn-secondary" type="submit" (click)="OnDWrite()">Write</button>
+        </div>
+    </form>
+    
+</div>

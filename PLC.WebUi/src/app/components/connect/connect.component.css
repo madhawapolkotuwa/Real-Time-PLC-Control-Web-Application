@@ -1,0 +1,35 @@
+.outer {
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, #f75b4d 50%, #c80502 90%) no-repeat;
+}
+
+.panel-heading {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+
+input[type='text'] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%
+}
+
+.input-field{
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #4343ff
+}
+
+.input-field.error {
+    border: 1px solid red;
+    color: red;
+}
+
+/* .ng-invalid  { border: 1px solid red; } */

@@ -1,0 +1,68 @@
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Connect</h3>
+                    </div>
+                    <div class="panel-body p-3">
+                        <form [formGroup]="addressForm">
+                            <!-- *********************************************************************************** -->
+                            <!-- ************************************* Ip Address ************************************ -->
+                            <!-- *********************************************************************************** -->
+                            <div class="form-group pt-3">
+                                <div 
+                                class="input-field"
+                                [class.error]="addressForm.controls['ipaddress'].dirty &&
+                                addressForm.hasError('required', 'ipaddress')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="ipaddress" type="text" placeholder="ipaddress">
+                                </div>
+                            </div>
+                            <small
+                                *ngIf="
+                                addressForm.controls['ipaddress'].dirty &&
+                                addressForm.hasError('required', 'ipaddress')
+                                "
+                                class="text-danger"
+                            >*ipaddress is required {{ipaddress.status}}
+                            </small>
+                            <!-- *********************************************************************************** -->
+                            <!-- ************************************* Port ************************************ -->
+                            <!-- *********************************************************************************** -->
+                            <div class="form-group pt-3">
+                                <div 
+                                    class="input-field"
+                                    [class.error]="addressForm.controls['port'].dirty &&
+                                    addressForm.hasError('required', 'port')">
+                                    <span class="fa fa-lock p-2"></span>
+                                    <input formControlName="port" type="text" placeholder="port">
+                                </div>
+                            </div>
+                            <small
+                                *ngIf="
+                                addressForm.controls['port'].dirty &&
+                                addressForm.hasError('required', 'port')
+                                "
+                                class="text-danger"
+                            >*port is required
+                            </small>
+                        
+                            <button
+                                (click)="onConnect()"
+                                type="submit"
+                                class="btn btn-primary btn-block mt-4 w-100"
+                            >
+                            Connect
+                            </button>
+                            <div *ngIf="addressForm.controls['ipaddress'].dirty">
+                            {{addressForm.status}} Ip Address & Port
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
