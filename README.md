@@ -1,5 +1,5 @@
 # Real-Time-PLC-Control-Web-Application
-using asp.net 6 &amp; angular 16 real-time PLC control and monitor Web Application
+Using SLMP (Seamless Message Protocol) to Communicate with the PLC, and ASP.NET Server with SignalR for Real-Time Web Applications, Alongside Angular 16 for the Frontend
 
 [![Watch the video](https://img.youtube.com/vi/e1HpK0Os1Pw/hqdefault.jpg)](https://www.youtube.com/embed/e1HpK0Os1Pw)
 
