@@ -1,0 +1,1 @@
+This project uses the SLMP package, developed by [brkp <brkp@tutanota.com>] and licensed under the MIT License. You can find the license information here: [[SLMP](https://github.com/Esmool/SLMP/tree/master)].
