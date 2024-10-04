@@ -6,3 +6,7 @@ Using SLMP (Seamless Message Protocol) to Communicate with the PLC, and ASP.NET 
 [<img src="https://img.youtube.com/vi/e1HpK0Os1Pw/hqdefault.jpg" width="600" height="300"
 />](https://www.youtube.com/embed/e1HpK0Os1Pw)
 
+# MIT LICENCE SLMP
+
+This project uses the SLMP package, developed by [brkp <brkp@tutanota.com>] and licensed under the MIT License. You can find the license information here: [[SLMP](https://github.com/Esmool/SLMP/tree/master)].
+
